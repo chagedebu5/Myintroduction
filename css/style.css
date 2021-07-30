@@ -1,0 +1,29 @@
+html, body {
+  color: black;
+  font-family: 'Hiragino Mincho Pro',serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: cadetblue;
+}
+
+header .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-list .nav-item {
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,124 @@
+header {
+    .header-fixed {
+        display: flex;
+        justify-content: space-between;
+        background-color: cadetblue;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: right;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 2;
+        p {
+            font-size: 28px;
+            text-align: left;
+            padding-left: 10px;
+            color: #fff;
+            @include overTab {
+                
+                font-size: 35px;
+              
+            }
+        }
+
+        .nav-btn {
+            width: 52px;
+            height: 30px;
+
+            background: transparent;
+            border: none;
+            font: inherit;
+            outline: none;
+            position: relative;
+            right: 30px;
+
+            &.-active {
+                span {
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    transition: transform 0.3s ease;
+                    &:first-child {
+                        transform: rotate(-315deg);
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+                    &:last-child {
+                        transform: rotate(315deg);
+                    }
+                }
+            }
+            span {
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+                display: block;
+                transition: transform 0.3s ease;
+                &:first-child {
+                    top: 0;
+                }
+                &:nth-child(2) {
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+                &:last-child {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    .header-nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000cc;
+        z-index: -2;
+
+        opacity: 0;
+        visibility: invisible;
+        transition: opacity 0.3s ease;
+        &.-active {
+            z-index: 1;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease;
+        }
+        .nav {
+            position: relative;
+            width: 70%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .nav-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                .nav-item {
+                    font-size: 30px;
+
+                    + .nav-item {
+                        margin-top: 50px;
+                    }
+                    p {
+                        text-align: center;
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

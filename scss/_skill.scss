@@ -1,0 +1,44 @@
+.skill {
+    background-image: url(./image/IMG-8097.JPG);
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    background-position: center;
+    background-size: cover;
+
+    .skill-list {
+        margin: 20px 40px 0 40px;
+        background-color: black;
+        background: rgba(225, 0, 0, 0.5);
+        font-size: 20px;
+        color: #fff;
+        border-radius: 30px;
+
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .skill-item {
+            width: 250px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            img {
+                border-radius: 8px;
+            }
+        }
+
+        .skill-image:hover {
+            opacity: 0.7;
+            color: white;
+            box-shadow: 0 5px 10px black;
+            transform: translate(0, -5px);
+        }
+
+        p {
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

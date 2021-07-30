@@ -1,0 +1,72 @@
+.service {
+    background-image: url(./image/IMG-8098.JPG);
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    .service-detail {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .service-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include overTab {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .service-item {
+            width: 230px;
+            + .service-item {
+                margin-top: 20px;
+            }
+            @include overTab {
+                + .service-item {
+                    margin-left: 100px;
+                    margin-top: 0;
+                }
+            }
+            img {
+                border-radius: 8px;
+            }
+
+            .service-content {
+                background: rgba(0, 0, 0, 0.5);
+                font-size: 14px;
+                color: #fff;
+                border-radius: 20px;
+                padding: 10px 20px 10px 20px;
+
+                .service-fee-title {
+                    margin-top: 20px;
+                    text-align: center;
+                }
+                .service-fee {
+                    margin-top: 20px;
+                    position: relative;
+                }
+
+                .service-fee:before {
+                    margin-top: 20px;
+                    position: absolute;
+                    content: "";
+                    width: 80%;
+                    height: 1px;
+                    background-color: #fff;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    top: -9px;
+                }
+            }
+        }
+    }
+}

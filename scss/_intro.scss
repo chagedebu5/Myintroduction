@@ -1,0 +1,56 @@
+.intro {
+    background-image: url(./image/IMG-8099.JPG);
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    .intro-image {
+        width: 300px;
+
+        margin: 10px auto;
+
+        img {
+            width: 300px;
+  
+
+  border-radius: 50%;
+
+  text-align: center;
+        }
+    }
+
+    .intro-item {
+        padding-top: 30px;
+
+        .intro-sentence {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 20px;
+            margin: 0 40px 0 40px;
+            background-color: black;
+            background: rgba(225, 0, 0, 0.5);
+            color: #fff;
+            border-radius: 30px;
+            p {
+                margin-top: 20px;
+            }
+        }
+
+        .intro-history {
+            margin: 20px 40px 0 40px;
+            background-color: black;
+            background: rgba(225, 0, 0, 0.5);
+            font-size: 20px;
+            color: #fff;
+            border-radius: 30px;
+            .intro-history-item {
+                display: flex;
+                justify-content: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+html,
+body {
+    color: black;
+    font-family: "Hiragino Mincho Pro", serif;
+
+    background-color: cyan;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+
+}
+
+@mixin overTab {
+	@media print,screen and (min-width: 768px) {
+		@content;
+	}
+}
