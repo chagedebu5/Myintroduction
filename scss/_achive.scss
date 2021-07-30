@@ -8,6 +8,7 @@
     .achive-list {
         display: flex;
         justify-content: center;
+        
         .achive-item {
             background-color: #fff;
             border-radius: 8px;
@@ -15,7 +16,7 @@
             margin-right: 30px;
             margin-bottom: 15px;
             width: 250px;
-            height: 400px;
+            height: 700px;
             .achive-image {
               height: 80%;
                 border-radius: 8px;
@@ -27,7 +28,7 @@
 
             .achive-sentence {
                 padding: 20px ;
-                font-size: 20px;
+                font-size: 25px;
             }
         }
     }
