@@ -8,26 +8,29 @@
     .achive-list {
         display: flex;
         justify-content: center;
-        
-        .achive-item {
-            background-color: #fff;
-            border-radius: 8px;
-            margin-left: 30px;
-            margin-right: 30px;
-            margin-bottom: 15px;
-            width: 250px;
-            height: 720px;
-            .achive-image {
-              height: 80%;
-                border-radius: 8px;
-                img{
-                    height: 95%;
 
+        .achive-item {
+
+            height: 500px;
+            @include overTab {
+                background-color: #fff;
+                border-radius: 8px;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 15px;
+                width: 250px;
+                height: 700px;
+            }
+            .achive-image {
+                height: 80%;
+                border-radius: 8px;
+                img {
+                    height: 95%;
                 }
             }
 
             .achive-sentence {
-                padding: 20px ;
+                padding: 20px;
                 font-size: 25px;
             }
         }
