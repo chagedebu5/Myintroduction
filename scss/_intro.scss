@@ -13,11 +13,10 @@
 
         img {
             width: 300px;
-  
 
-  border-radius: 50%;
+            border-radius: 50%;
 
-  text-align: center;
+            text-align: center;
         }
     }
 
@@ -27,12 +26,16 @@
         .intro-sentence {
             padding-top: 20px;
             padding-bottom: 20px;
-            font-size: 20px;
+            font-size: 17px;
             margin: 0 40px 0 40px;
             background-color: black;
             background: rgba(225, 0, 0, 0.5);
             color: #fff;
             border-radius: 30px;
+            @include overTab {
+                font-size: 20px;
+                
+             }
             p {
                 margin-top: 20px;
             }
@@ -42,14 +45,21 @@
             margin: 20px 40px 0 40px;
             background-color: black;
             background: rgba(225, 0, 0, 0.5);
-            font-size: 20px;
+            font-size: 17px;
             color: #fff;
             border-radius: 30px;
+
+            @include overTab {
+                font-size: 20px;
+                
+             }
             .intro-history-item {
+                
                 display: flex;
                 justify-content: center;
                 padding-top: 20px;
                 padding-bottom: 20px;
+               
             }
         }
     }
