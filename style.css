@@ -234,12 +234,18 @@ header .header-nav .nav .nav-list .nav-item p a {
 .intro .intro-item .intro-sentence {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 20px;
+  font-size: 17px;
   margin: 0 40px 0 40px;
   background-color: black;
   background: rgba(225, 0, 0, 0.5);
   color: #fff;
   border-radius: 30px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .intro .intro-item .intro-sentence {
+    font-size: 20px;
+  }
 }
 
 .intro .intro-item .intro-sentence p {
@@ -250,9 +256,15 @@ header .header-nav .nav .nav-list .nav-item p a {
   margin: 20px 40px 0 40px;
   background-color: black;
   background: rgba(225, 0, 0, 0.5);
-  font-size: 20px;
+  font-size: 17px;
   color: #fff;
   border-radius: 30px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .intro .intro-item .intro-history {
+    font-size: 20px;
+  }
 }
 
 .intro .intro-item .intro-history .intro-history-item {
@@ -432,13 +444,19 @@ header .header-nav .nav .nav-list .nav-item p a {
 }
 
 .achive .achive-list .achive-item {
-  background-color: #fff;
-  border-radius: 8px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 15px;
-  width: 250px;
-  height: 400px;
+  height: 500px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .achive .achive-list .achive-item {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    width: 250px;
+    height: 700px;
+  }
 }
 
 .achive .achive-list .achive-item .achive-image {
@@ -452,7 +470,7 @@ header .header-nav .nav .nav-list .nav-item p a {
 
 .achive .achive-list .achive-item .achive-sentence {
   padding: 20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .footer-list {
